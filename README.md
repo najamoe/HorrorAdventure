@@ -1,4 +1,4 @@
-<div style="text-align: center; align:center"> 
+
 # **The Graveyard - A Horror Adventure Game**
 
 
@@ -8,5 +8,5 @@ The Graveyard: A Horror Adventure Game invites you to delve into the chilling my
 
 ![Play button](image/play.png) 
   
-</div>
+
 
