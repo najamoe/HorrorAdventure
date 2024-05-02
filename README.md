@@ -8,5 +8,7 @@ The Graveyard: A Horror Adventure Game invites you to delve into the chilling my
 
 ![Play button](image/play.png) 
   
-
+<p align="center">
+<img width="600" height="auto" src="image/play.png">
+</p>
 
