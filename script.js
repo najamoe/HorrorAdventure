@@ -1,5 +1,3 @@
-"use strict"
-
 //Variable to keep track of which nodes have been used, in order to make the story not have conflicts
 let chosenNodeIds = [];
 
@@ -46,14 +44,18 @@ const hesitateAndConsider = {
     id: 4,
     title: "Return Home",
     description: "Really? You haven't even gone in yet, and are already too scared...",
-    choices: []
+    choices: [
+        { name: "Restart game", node: startNode}
+    ]
 };
 
 const returnHome = {
     id: 5,
     title: "Return Home",
     description: "You are too scared and run back home, maybe it was the choice that saved your life, we will never know",
-    choices: []
+    choices: [
+        { name: "Restart game", node: startNode}
+    ]
 };
 
 const continueForward = {
@@ -186,14 +188,18 @@ const acceptFate = {
     id: 16,
     title: "Accept your Fate",
     description: "As the darkness envelops you, you realize there's no escape. You close your eyes and accept your fate, knowing that you'll never leave this place.",
-    choices: []
+    choices: [
+        { name: "Restart game", node: startNode}
+    ]
 };
 
 const keepSearching = {
     id: 17,
     title: "Keep Searching",
     description: "You search desperately for an exit, but the mausoleum seems to twist and turn, its corridors shifting endlessly. The whispers grow louder, mocking you, until finally, you can take no more. The darkness consumes you.",
-    choices: []
+    choices: [
+        { name: "Restart game", node: startNode}
+    ]
 };
 
 const runHome = {
@@ -208,6 +214,8 @@ const runHome = {
 // Connecting Nodes
 startNode.choices[0].node = enterTheGraveyard;
 startNode.choices[1].node = hesitateAndConsider;
+
+
 
 enterTheGraveyard.choices[0].node = continueForward;
 enterTheGraveyard.choices[1].node = exploreTheGraves;
@@ -245,6 +253,10 @@ callOutForJessica.choices[1].node = runHome;
 
 lookAtMausoleum.choices[0].node = investigateMausoleum;
 lookAtMausoleum.choices[1].node = runHome; 
+
+investigateMausoleum.choices[0].node = keepSearching;
+investigateMausoleum.choices[1].node = acceptFate;
+
 
 // Function to display nodes
 function displayNode(node) {

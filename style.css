@@ -1,0 +1,42 @@
+body {
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Example font-family */
+    background-color: #333333;
+    background-image: url('image/graveyard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the entire viewport is covered */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set height to full viewport height */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#nodeContainer {
+    text-align: center;
+    max-width: 1000px;
+}
+
+#nodeTitle {
+    font-size: 24px; 
+    font-weight: bold;
+    padding: 20px;
+}
+
+#nodeDescription {
+    font-size: 18px; 
+}
+
+#choicesContainer {
+    margin-top: 20px; 
+    padding: 20px;
+    
+}
+
+.choiceButton {
+    margin-right: 20px;
+    
+}
