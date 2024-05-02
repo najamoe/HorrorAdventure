@@ -7,4 +7,11 @@ The Graveyard: A Horror Adventure Game invites you to delve into the chilling my
 
 [![Play Now](image/play.png)](https://najamoe.github.io/HorrorAdventure/)
 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <a href="https://najamoe.github.io/HorrorAdventure/">
+        <img src="image/play.png" alt="Play Now" style="width: 200px; height: auto;">
+    </a>
+</div>
+
+
 
